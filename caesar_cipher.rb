@@ -1,3 +1,12 @@
+puts "Enter a message you want to encrypt"
+string = gets.chomp
+puts "Enter a key - any positive integer number"
+key = gets.chomp.to_i
+while key <= 0
+  puts "Key must be a positive integer. Try once more"
+  key = gets.chomp.to_i
+end
+
 def caesar_cipher(string, key)
   key = key % 26
   string_array = string.split('')
@@ -22,6 +31,12 @@ def caesar_cipher(string, key)
   end
   result_array.join('')
 end
+
+puts "-------------------------------------------"
+puts "Your encrypted message:"
+puts caesar_cipher(string, key)
+puts "-------------------------------------------"
+puts "Pass it to your recipient with a key: #{key}"
 
 # p caesar_cipher("What a string!", 5)
 # p caesar_cipher("1  684 44 0", 4)
