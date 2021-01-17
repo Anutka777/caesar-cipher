@@ -1,9 +1,9 @@
-puts "Enter a message you want to encrypt"
+puts 'Enter a message you want to encrypt'
 string = gets.chomp
-puts "Enter a key - any positive integer number"
+puts 'Enter a key - any positive integer number'
 key = gets.chomp.to_i
 while key <= 0
-  puts "Key must be a positive integer. Try once more"
+  puts 'Key must be a positive integer. Try once more'
   key = gets.chomp.to_i
 end
 
@@ -25,7 +25,7 @@ def caesar_cipher(string, key)
         new_char = (char.ord + key).chr
       end
     else
-        new_char = char
+      new_char = char
     end
     result_array.push(new_char)
   end
