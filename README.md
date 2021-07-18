@@ -6,5 +6,8 @@ It uses the substitution of a letter by another one further in the alphabet.
 
 You may find out more on [Wikipedia](https://en.wikipedia.org/wiki/Caesar_cipher)
 
-Or try my code on [repl.it](https://repl.it/@Anutka777/caesar-cipher#.replit).
-Just hit a Run button on top of the page
+Try my code on [repl.it](https://repl.it/@Anutka777/caesar-cipher#.replit).
+
+* Enter a message you want to encrypt
+* Enter a positive integer number, which would be the key for decryption
+* Recieve your encrypted message
